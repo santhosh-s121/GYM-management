@@ -10,9 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
-# import pymysql
-# pymysql.version_info = (2, 2, 1, "final", 0)
-# pymysql.install_as_MySQLdb()
+import pymysql
+pymysql.version_info = (2, 2, 1, "final", 0)
+pymysql.install_as_MySQLdb()
 
 from pathlib import Path
 
@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-z)b-j-h*gd%x240r!6d0v$0zv*5ojme&nzvu6w-bep9#2kvcmq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
